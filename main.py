@@ -4,25 +4,22 @@
  #senario5----------------------------
 
 def senario5 ():
-    pass
-answer = ["yes","no"]
-print("You hear bushes ruffleing and go to investigate it. You come across a monster it see's you what do you do?")
-while answer:
-    yes = input("Do you want to fight the monster?")
-    if yes == "yes":
-        print("You fight the monster!")
-    else:
-        input("yes") 
-        
-
+    answer_yes =["yes", "Yes"]
+    answer_no =["no","No"]
+    while True:
+        print("You hear bushes ruffleing and go to investigate it. You come across a monster it see's you what do you do?")
+        yes = input ("Do you want to fight the monster?")
+        if yes == "yes":
+            print("You fight the monster")
+            senario6()
+        else:
+            input("no") 
 
 
  #senario6--------------------------------
 
 
-def senario6 ():
-
-   
+def senario6 ():   
     print (".")
     print (".")
     print (".")
