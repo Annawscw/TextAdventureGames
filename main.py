@@ -47,19 +47,46 @@ def intro():
 #functions
 def scenario1():
     
+    GOOD_COMMENTS=["Smart","luckey","great"]
+    BAD_COMMENTS=["sorrry,go replay","sorry,you are die"]
+
+
     print("Morning!Welcome to the Forest World!")
-    print("溫馨提示：拍拍你自己的臉讓自己保持清醒和警惕，森林中的危險無處不在，別因爲自己的大意之舉而喪命")
-    print("")
+    print("Warm tips: Pat your own face to keep yourself awake and alert, danger is everywhere in the forest, don't die because of your careless actions")
     print("You are the warrior chosen by the King of the Forest, and I am the messenger of this forest world, you cannot see me, but you can hear my voice, I will help you read the questions, and I will remind you of some of the more detailed details of the questions, so that you will not die so soon")
     print("Good luck!")
 
     print("Ok.")
-    print("Now,you have two options:1,walk into the deeper forest(go walk front)2,get killed from the system.")
+    print("Now,you have two options:1,walk into the deeper forest(go walk front)2,get killed by the system.")
     print("Please listen the question careful,give the system your best answer,thank you.")
 
+    
+    
+    QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{} "
+    question = "Do you want to front/into the deeper forest? ?"
+    a= "Yes,i want to"
+    b= "No,nononono"
+    c= "into the deeper forest/go walk front"
+    d= "get killed by the system"
+    answer= input(QUESTION_FORMAT.format(question,a,b,c,d)).lower()
+
+    if answer == "a".lower() or answer==a.lower():
+        print("correct!")
+        score=score+10
+        print(GOOD_COMMENTS[2])
+
+    elif answer =="":
+        print("not sure???") 
+        print("Wellington")
+        print(BAD_COMMENTS[0])
+    else:
+        print("incorrect")
+        print("A")
+        print(BAD_COMMENTS[1])
+        
     input("Do want to walk front/into the deeper forest?")
 
-    if answer==
+    
     
 #functions
 
@@ -69,6 +96,7 @@ def dieofstrvation():
 #main code
 
 intro()
+scenario1()
 
 
     
