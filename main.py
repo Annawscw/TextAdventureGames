@@ -47,8 +47,10 @@ def intro():
 #functions
 def scenario1():
     
+    
+    import random
     GOOD_COMMENTS=["Smart","luckey","great"]
-    BAD_COMMENTS=["sorrry,go replay","sorry,you are die"]
+    BAD_COMMENTS=["sorry,go replay","sorry,you are die"]
 
 
     print("Morning!Welcome to the Forest World!")
@@ -62,30 +64,26 @@ def scenario1():
 
     
     
+    
     QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{} "
     question = "Do you want to front/into the deeper forest? ?"
     a= "Yes,i want to"
     b= "No,nononono"
     c= "into the deeper forest/go walk front"
     d= "get killed by the system"
+
     answer= input(QUESTION_FORMAT.format(question,a,b,c,d)).lower()
 
-    if answer == "a".lower() or answer==a.lower():
-        print("correct!")
-        score=score+10
-        print(GOOD_COMMENTS[2])
+    if answer == "a"or"c".lower() or answer==a or c.lower():
+
+        print(GOOD_COMMENTS[2]) 
 
     elif answer =="":
         print("not sure???") 
-        print("Wellington")
-        print(BAD_COMMENTS[0])
-    else:
-        print("incorrect")
-        print("A")
         print(BAD_COMMENTS[1])
-        
-    input("Do want to walk front/into the deeper forest?")
-
+    else:
+        print("you are die sorry")
+        print(BAD_COMMENTS[1])
     
     
 #functions
@@ -94,8 +92,6 @@ def dieofstrvation():
       pass
 
 #main code
-
-intro()
 scenario1()
 
 
