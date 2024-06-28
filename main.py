@@ -56,9 +56,6 @@ def scenario1():
 def dieofstrvation():
       pass
 
-#main code
-
-intro()
 
 
     
