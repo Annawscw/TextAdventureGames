@@ -53,6 +53,14 @@ def scenario1():
     print("You are the warrior chosen by the King of the Forest, and I am the messenger of this forest world, you cannot see me, but you can hear my voice, I will help you read the questions, and I will remind you of some of the more detailed details of the questions, so that you will not die so soon")
     print("Good luck!")
 
+    print("Ok.")
+    print("Now,you have two options:1,walk into the deeper forest(go walk front)2,get killed from the system.")
+    print("Please listen the question careful,give the system your best answer,thank you.")
+
+    input("Do want to walk front/into the deeper forest?")
+
+    if answer==
+    
 #functions
 
 def dieofstrvation():
