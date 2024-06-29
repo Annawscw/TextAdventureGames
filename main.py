@@ -1,3 +1,4 @@
+#___________________________________________
 #functions
 
 <<<<<<< Updated upstream
@@ -110,6 +111,7 @@ dieofstrvation()
 
     
 =======
+#------------------------------------------------Annas________________
 # set up variables to control how game flows
 gameflow = "start"
 
