@@ -1,5 +1,6 @@
 #functions
 
+<<<<<<< Updated upstream
 
 
 #main code
@@ -108,3 +109,43 @@ dieofstrvation()
 
 
     
+=======
+# set up variables to control how game flows
+gameflow = "start"
+
+# mock waiting for Tixha code for scenario 3
+weapon = "sword"
+
+def scenario6():
+    print (".")
+    print (".")
+    print (".")
+    print ("Congratulations you have defeated the monster!")
+    print ("You have finished forest escape game.")
+    gameflow = "success"
+
+def scenario7():
+     print (".")
+     print (".")
+     print (".")
+     print ("You wander deeper into the forest.")
+
+# scenario5 ():
+
+while True:
+        print("You hear bushes rusling and go to investigate it. You come across a monster and it sees you - what do you do?")
+        scenario5choice = input ("Do you want to fight the monster?")
+        print (gameflow)
+        if scenario5choice == "yes":
+            print("You fight the monster")
+            if weapon == "sword":
+                scenario6()
+            elif weapon != "sword":
+                print ("The monster defeats you and you die!")
+                break
+        else:
+            print("You move on further down the path")
+            scenario7()
+        if gameflow == "success":
+             break
+>>>>>>> Stashed changes
