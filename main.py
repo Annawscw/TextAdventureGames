@@ -1,7 +1,6 @@
 #___________________________________________
 #functions
 
-<<<<<<< Updated upstream
 
 
 #main code
@@ -100,17 +99,13 @@ def dieofstrvation():
     if answer =="yes":
          print("just open this game again and replay")
 
-<<<<<<< HEAD
-=======
 #main code
 intro()
 scenario1()
 dieofstrvation()
->>>>>>> 56fafebd075a278701cec54004ef9e29233b8afb
 
 
     
-=======
 #------------------------------------------------Annas________________
 # set up variables to control how game flows
 gameflow = "start"
@@ -150,4 +145,4 @@ while True:
             scenario7()
         if gameflow == "success":
              break
->>>>>>> Stashed changes
+
