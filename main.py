@@ -13,7 +13,7 @@ def intro():
         while True:
                 try:
 
-                    answer=input("We have a thousand backgrounds for you.just give a number that you thinking now.")
+                    answer=input("We have a thousand backgrounds for you.Just give a number that you thinking now.The number must bigger than 0,smaller than 1000.")
                     answer=int(answer) 
                     
                     if answer<1000 and answer >0:
@@ -92,15 +92,12 @@ def dieofstrvation():
 
     if answer =="yes":
          print("just open this game again and replay")
-<<<<<<< Updated upstream
+
     while True:
          if answer =="yes":
             print("just open this game again and replay")
             intro()
 
-=======
-    while Ture
->>>>>>> Stashed changes
 #main code
 intro()
 scenario1()
