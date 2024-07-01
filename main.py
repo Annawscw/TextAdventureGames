@@ -7,8 +7,6 @@ def intro():
 # Greet the user and introduce the quiz
         print("Welcome to the Forest World!",name)
 
-        answer=input("We have a thousand backgrounds for you.just give a number that you thinking now.the number must bigger than 0,less than 1000.")
-
             
         while True:
                 try:
@@ -72,7 +70,7 @@ def scenario1():
         if answer == "a"or answer=="c".lower() or answer==a or answer==c.lower():
              print(GOOD_COMMENTS[2])   
 
-        elif answer =="b"or answer=="d":
+        elif answer =="":
             print("not sure???") 
             print(BAD_COMMENTS[1])
 
@@ -93,10 +91,7 @@ def dieofstrvation():
     if answer =="yes":
          print("just open this game again and replay")
 
-    while True:
-         if answer =="yes":
-            print("just open this game again and replay")
-            intro()
+   
 
 #main code
 intro()
