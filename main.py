@@ -1,10 +1,5 @@
 #functions
 
-
-
-#main code
-#functions
-
 def intro():
 
 # Ask the user their name 
@@ -74,16 +69,16 @@ def scenario1():
 
         answer= input(QUESTION_FORMAT.format(question,a,b,c,d)).lower()
         
-        if answer == "a"or"c".lower() or answer==a or c.lower():
+        if answer == "a"or answer=="c".lower() or answer==a or answer==c.lower():
+             print(GOOD_COMMENTS[2])   
 
-            print(GOOD_COMMENTS[2]) 
-                    
-        elif answer =="":
+        elif answer =="b"or answer=="d":
             print("not sure???") 
             print(BAD_COMMENTS[1])
+
         else:
             print("you are die sorry")
-            print(BAD_COMMENTS[1])
+            
         
         
     #functions
@@ -97,6 +92,10 @@ def dieofstrvation():
 
     if answer =="yes":
          print("just open this game again and replay")
+    while True:
+         if answer =="yes":
+            print("just open this game again and replay")
+            intro()
 
 #main code
 intro()
