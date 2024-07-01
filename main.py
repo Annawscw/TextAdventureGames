@@ -92,11 +92,15 @@ def dieofstrvation():
 
     if answer =="yes":
          print("just open this game again and replay")
+<<<<<<< Updated upstream
     while True:
          if answer =="yes":
             print("just open this game again and replay")
             intro()
 
+=======
+    while Ture
+>>>>>>> Stashed changes
 #main code
 intro()
 scenario1()
