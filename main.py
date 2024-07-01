@@ -85,13 +85,14 @@ def dieofstrvation():
         
             
     print("Sorry you are dead")
+    print("answer yes or no")
 
     answer=input("Do you want to play this game again?")
 
-    if answer =="yes":
-         print("just open this game again and replay")
-
-   
+    while True:
+         if answer =="yes":
+            
+            intro()
 
 #main code
 intro()
